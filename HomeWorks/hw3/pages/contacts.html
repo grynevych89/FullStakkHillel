@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/favicon.ico">
+    <link rel="stylesheet" href="../static/css/style.css">
+    <title>Contact page</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="site-header">
+            <div class="container">
+                <nav>
+                    <ul class="nav">
+                        <li><a href="../index.html">Main</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="articles.html">Articles</a></li>
+                        <li><a href="#">Contacts</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="articles.html#article-9">Article 9</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <main>
+            <div class="container">
+                <h1>Contact page</h1>
+                <form class="form">
+                    <div class="form__row">
+                        <label class="form__label" for="name">Name:</label>
+                        <input class="form__control" type="text" id="name" placeholder="Name">
+                    </div>
+                    <div class="form__row">
+                        <label class="form__label" for="email">Email:</label>
+                        <input class="form__control" type="email" id="email" placeholder="Email">
+                    </div>
+                    <div class="form__row">
+                        <label class="form__label" for="tel">Telephone:</label>
+                        <input class="form__control" type="tel" id="tel" placeholder="Telephone">
+                    </div>
+                    <div class="form__row form__row--full">
+                        <label class="form__label" for="text">Text:</label>
+                        <textarea class="form__control" id="text" name="text" placeholder="Typing here..."></textarea>
+                    </div>
+                    <div class="form__row">
+                        <label class="form__label" for="type">Type:</label>
+                        <select class="form__control" name="type" id="type">
+                            <option value="male">Чоловік</option>
+                            <option value="female">Жінка</option>
+                        </select>
+                    </div>
+                    <div class="form__row form__row--full">
+                        <span class="form__label">Skills:</span>
+                        <div class="form__checkgroup">
+                            <label><input type="checkbox"> Html</label>
+                            <label><input type="checkbox"> Css</label>
+                            <label><input type="checkbox"> JS</label>
+                            <label><input type="checkbox"> React</label>
+                            <label><input type="checkbox"> Node.js</label>
+                        </div>
+                    </div>
+                    <fieldset class="form__row form__row--full">
+                        <legend>Select:</legend>
+                        <div class="form__radiogroup">
+                            <label><input type="radio" name="country" value="ukraine" checked> Ukraine</label>
+                            <label><input type="radio" name="country" value="europe"> Europe</label>
+                            <label><input type="radio" name="country" value="usa"> USA</label>
+                        </div>
+                    </fieldset>
+                    <div class="form__row">
+                        <label class="form__label" for="vol">Volume (between 0 and 50):</label>
+                        <input class="form__control" type="range" id="vol" name="vol" min="0" max="50">
+                    </div>
+                    <div class="form__row">
+                        <label class="form__label" for="myfile">Select a file:</label>
+                        <input class="form__control" type="file" id="myfile" name="myfile">
+                    </div>
+                    <div class="form__row">
+                        <label class="form__label" for="dt">Date & time:</label>
+                        <input class="form__control" id="dt" type="datetime-local">
+                    </div>
+                    <div class="form__actions">
+                        <button type="submit">Submit</button>
+                        <button type="reset">Reset</button>
+                    </div>
+                </form>
+            </div>
+        </main>
+        <footer class="site-footer">
+            <div class="container">
+                <p>© 2025 Всі права захищені.<span class="break">Дизайн та розробка — <a href="https://grynevych89.com.ua/" target="_blank">Grynevych Mykola</a></span></p>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
