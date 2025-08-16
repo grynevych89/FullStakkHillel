@@ -1,0 +1,58 @@
+@import url("reset.css");
+
+/* 1. Тег */
+p {
+  background: lightgreen;
+}
+
+/* 2. Клас */
+.red-box {
+  background: red;
+  color: white;
+}
+
+/* 3. ID */
+#main-title {
+  background: orange;
+  color: white;
+}
+
+/* 4. Атрибут */
+input[type="text"] {
+  background: lightblue;
+}
+
+/* 5. Вкладені селектори */
+div span {
+  background: pink;
+}
+
+/* 6. Дочірні селектори */
+div>p {
+  background: yellow;
+}
+
+/* 7. Послідовність селекторів */
+ul li {
+  background: violet;
+  color: white;
+}
+
+/* 8. Комбінація тег+клас */
+p.blue-text {
+  background: blue;
+  color: white;
+}
+
+/* 9. Комбінація тег+атрибут */
+a[title] {
+  background: brown;
+  color: white;
+  text-decoration: none;
+}
+
+/* 10. Комбінація id+клас */
+#special.highlight {
+  background: black;
+  color: white;
+}

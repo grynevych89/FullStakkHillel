@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+  <meta charset="UTF-8">
+  <title>CSS селектори</title>
+  <link rel="stylesheet" href="static/css/style.css">
+</head>
+
+<body>
+  <!-- 1. Тег -->
+  <p>Селектор: p (вага 1)</p>
+  <!-- 2. Клас -->
+  <div class="red-box">Селектор: .red-box (вага 10)</div>
+  <!-- 3. ID -->
+  <h1 id="main-title">Селектор: #main-title (вага 100)</h1>
+  <!-- 4. Атрибут -->
+  <input type="text" placeholder="Селектор: input[type=text] (вага 11)">
+  <!-- 5. Вкладені селектори -->
+  <div>
+    <span>Селектор: div span (вага 2)</span>
+  </div>
+  <!-- 6. Дочірні селектори -->
+  <div>
+    <p>Селектор: div > p (вага 2)</p>
+  </div>
+  <!-- 7. Послідовність селекторів -->
+  <ul>
+    <li>Селектор: ul li (вага 2)</li>
+  </ul>
+  <!-- 8. Комбінація тег+клас -->
+  <p class="blue-text">Селектор: p.blue-text (вага 11)</p>
+  <!-- 9. Комбінація тег+атрибут -->
+  <a href="#" title="link">Селектор: a[title] (вага 11)</a>
+  <!-- 10. Комбінація id+клас -->
+  <div id="special" class="highlight">Селектор: #special.highlight (вага 110)</div>
+</body>
+
+</html>
