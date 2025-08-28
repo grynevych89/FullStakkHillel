@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="uk">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>ДЗ 8.1 — Flexbox & Grid</title>
+    <link rel="stylesheet" href="static/css/styles.css" />
+</head>
+
+<body>
+    <main class="container">
+        <section class="section">
+            <h2 class="section__title">Flexbox приклади</h2>
+            <article class="demo">
+                <h3 class="demo__title">1. Один ліворуч, один праворуч</h3>
+                <div class="fx fx--space">
+                    <div class="box box--sm">Лівий блок</div>
+                    <div class="box box--sm">Правий блок</div>
+                </div>
+            </article>
+            <article class="demo">
+                <h3 class="demo__title">2. Один ліворуч, кілька праворуч</h3>
+                <div class="fx fx--space fx--top">
+                    <div class="box box--sm">Ліва колонка</div>
+                    <div class="fx fx--row box--group-3">
+                        <div class="box box--sm">Праворуч — блок 1</div>
+                        <div class="box box--sm">Праворуч — блок 2</div>
+                        <div class="box box--sm">Праворуч — блок 3</div>
+                    </div>
+                </div>
+            </article>
+            <article class="demo">
+                <h3 class="demo__title">3. Два ліворуч, два праворуч</h3>
+                <div class="fx fx--space fx--top">
+                    <div class="fx fx--row box--group-2">
+                        <div class="box box--sm">Ліворуч — 1</div>
+                        <div class="box box--sm">Ліворуч — 2</div>
+                    </div>
+                    <div class="fx fx--row box--group-2">
+                        <div class="box box--sm">Праворуч — 1</div>
+                        <div class="box box--sm">Праворуч — 2</div>
+                    </div>
+                </div>
+            </article>
+            <article class="demo">
+                <h3 class="demo__title">4. Три праворуч (два з них один під одним)</h3>
+                <div class="fx fx--right fx--top">
+                    <div class="box box--tall">Праворуч — великий</div>
+                    <div class="fx fx--col box--stack">
+                        <div class="box box--sm">Праворуч — малий A</div>
+                        <div class="box box--sm">Праворуч — малий B</div>
+                    </div>
+                </div>
+            </article>
+            <article class="demo">
+                <h3 class="demo__title">5. Три по центру (два з них один під одним)</h3>
+                <div class="fx fx--center cluster-center">
+                    <div class="box box--wide">Центр — великий</div>
+                    <div class="fx fx--col box--stack">
+                        <div class="box box--sm">Центр — стовпчик B (верхній)</div>
+                        <div class="box box--sm">Центр — стовпчик B (нижній)</div>
+                    </div>
+                </div>
+            </article>
+        </section>
+        <section class="section">
+            <h2 class="section__title">Grid приклади</h2>
+            <article class="demo">
+                <h3 class="demo__title">1. Один ліворуч, один праворуч</h3>
+                <div class="gr gr--two-equal gr--space">
+                    <div class="box">Лівий блок</div>
+                    <div class="box">Правий блок</div>
+                </div>
+            </article>
+            <article class="demo">
+                <h3 class="demo__title">2. Один ліворуч, кілька праворуч</h3>
+                <div class="gr gr--left-fixed">
+                    <div class="box">Ліва колонка</div>
+                    <div class="gr gr--row-3">
+                        <div class="box">Праворуч — блок 1</div>
+                        <div class="box">Праворуч — блок 2</div>
+                        <div class="box">Праворуч — блок 3</div>
+                    </div>
+                </div>
+            </article>
+            <article class="demo">
+                <h3 class="demo__title">3. Два ліворуч, два праворуч</h3>
+                <div class="gr gr--two-wide">
+                    <div class="gr gr--row-2">
+                        <div class="box">Ліворуч — 1</div>
+                        <div class="box">Ліворуч — 2</div>
+                    </div>
+                    <div class="gr gr--row-2">
+                        <div class="box">Праворуч — 1</div>
+                        <div class="box">Праворуч — 2</div>
+                    </div>
+                </div>
+            </article>
+            <article class="demo">
+                <h3 class="demo__title">4. Три праворуч (два з них один під одним)</h3>
+                <div class="gr gr--right cluster-right">
+                    <div class="box box--tall">Праворуч — великий</div>
+                    <div class="gr gr--stack-2">
+                        <div class="box">Праворуч — малий A</div>
+                        <div class="box">Праворуч — малий B</div>
+                    </div>
+                </div>
+            </article>
+            <article class="demo">
+                <h3 class="demo__title">5. Три по центру (два з них один під одним)</h3>
+                <div class="gr cluster-center-grid">
+                    <div class="box box--wide">Центр — великий</div>
+                    <div class="gr gr--stack-2">
+                        <div class="box">Центр — стовпчик B (верхній)</div>
+                        <div class="box">Центр — стовпчик B (нижній)</div>
+                    </div>
+                </div>
+            </article>
+        </section>
+    </main>
+</body>
+
+</html>
