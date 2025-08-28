@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="uk">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>7. Позиціонування</title>
+  <link rel="shortcut icon" href="static/img/favicon.ico">
+  <link rel="stylesheet" href="static/css/styles.css">
+</head>
+
+<body>
+  <div class="wrapper">
+    <header>
+      <div class="container">
+        <p class="site-title">ДЗ 7.1. Експерименти з блоковою моделлю</p>
+        <nav>
+          <a href="index.html">Головна</a>
+          <a href="02-block-inline.html">2. Block vs Inline</a>
+          <a href="03-normalize.html">3. normalize.css</a>
+          <a href="03-reset.html">3. reset.css</a>
+          <a href="04-display-boxsizing.html">4. display & box-sizing</a>
+          <a href="05-float-clear.html">5. float & clear</a>
+          <a href="06-overflow.html">6. overflow</a>
+          <a href="07-positioning.html">7. position</a>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <div class="container">
+        <h1>7. Позиціонування елементів</h1>
+        <section class="demo-box">
+          <h2>static (типово)</h2>
+          <div class="pos-stage">
+            <div class="demo-box pos-static">Це звичайний потік документа (static).</div>
+          </div>
+        </section>
+        <section class="demo-box">
+          <h2>relative</h2>
+          <div class="pos-stage">
+            <div class="demo-box pos-relative">Відносне позиціонування: зміщено <code>top/left</code>.</div>
+          </div>
+        </section>
+        <section class="demo-box">
+          <h2>absolute</h2>
+          <div class="pos-stage pos-absolute-parent">
+            <div class="demo-box">Батьківський блок має <code>position: relative</code>.</div>
+            <div class="pos-absolute-child">Абсолютний елемент (top/right відносно батька).</div>
+          </div>
+        </section>
+        <section class="demo-box">
+          <h2>fixed vs sticky</h2>
+          <p>Прокрутіть сторінку, щоб побачити різницю:</p>
+          <div class="pos-fixed">Я <strong>fixed</strong>: завжди у правому нижньому куті вікна.</div>
+          <div class="sticky-wrap">
+            <div class="pos-sticky">Я <strong>sticky</strong>: прилипаю до верхнього краю контейнера.</div>
+            <p>Довгий контент...<br>Довгий контент...<br>Довгий контент...<br>Довгий контент...<br>Довгий контент...<br>Довгий контент...<br>Довгий контент...<br>Довгий контент...<br>Довгий контент...<br>Довгий контент...<br>Довгий контент...<br>Довгий контент...</p>
+          </div>
+        </section>
+        <section class="demo-box">
+          <h2>Пояснення</h2>
+          <ul>
+            <li><strong>fixed</strong>: позиціонується відносно вікна браузера й не рухається при скролі.</li>
+            <li><strong>sticky</strong>: звичайний елемент доки не дійде до заданого краю (наприклад, <code>top: 0</code>), після чого «прилипає» в межах батьківського контейнера.</li>
+          </ul>
+        </section>
+      </div>
+    </main>
+    <footer>
+      <div class="container"><small>© 2025 Всі права захищені. Дизайн та розробка — <a href="https://grynevych89.com.ua/" target="_blank">Grynevych Mykola</a></small>
+      </div>
+    </footer>
+  </div>
+</body>
+
+</html>

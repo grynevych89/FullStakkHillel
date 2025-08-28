@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="uk">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>2. Блокові vs Інлайнові елементи</title>
+  <link rel="shortcut icon" href="static/img/favicon.ico">
+  <link rel="stylesheet" href="static/css/styles.css">
+</head>
+
+<body>
+  <div class="wrapper">
+    <header>
+      <div class="container">
+        <p class="site-title">ДЗ 7.1. Експерименти з блоковою моделлю</p>
+        <nav>
+          <a href="index.html">Головна</a>
+          <a href="02-block-inline.html">2. Block vs Inline</a>
+          <a href="03-normalize.html">3. normalize.css</a>
+          <a href="03-reset.html">3. reset.css</a>
+          <a href="04-display-boxsizing.html">4. display & box-sizing</a>
+          <a href="05-float-clear.html">5. float & clear</a>
+          <a href="06-overflow.html">6. overflow</a>
+          <a href="07-positioning.html">7. position</a>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <div class="container">
+        <h1>2. Робота з блоковими та інлайновими елементами</h1>
+        <section class="demo-box">
+          <h2>Приклад блокових елементів (<code>&lt;div&gt;</code>)</h2>
+          <div class="block-demo">
+            <div>Це <strong>DIV</strong> №1</div>
+            <div>Це <strong>DIV</strong> №2</div>
+            <div>Це <strong>DIV</strong> №3</div>
+          </div>
+          <p><span class="badge">Очікування:</span> кожен <code>div</code> займає всю ширину контейнера і розташовується з нового рядка.</p>
+        </section>
+        <section class="demo-box">
+          <h2>Приклад інлайнових елементів (<code>&lt;span&gt;</code>)</h2>
+          <p class="inline-demo">
+            <span>SPAN A</span>
+            <span>SPAN B</span>
+            <span>SPAN C</span>
+            <span>SPAN D</span>
+          </p>
+          <p><span class="badge">Очікування:</span> <code>span</code> розташовуються в один рядок, займаючи лише потрібну ширину.</p>
+        </section>
+      </div>
+    </main>
+    <footer>
+      <div class="container"><small>© 2025 Всі права захищені. Дизайн та розробка — <a href="https://grynevych89.com.ua/" target="_blank">Grynevych Mykola</a></small>
+      </div>
+    </footer>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,320 @@
+:root {
+  --bg: #0b0f14;
+  --panel: #121720;
+  --ink: #e7eef7;
+  --muted: #93a1b1;
+  --accent: #8ecae6;
+  --accent-2: #f9c74f;
+  --danger: #ef476f;
+  --ok: #06d6a0;
+  --code: #1a2332;
+  --border: #203045;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+body {
+  margin: 0;
+  font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial,
+    "Apple Color Emoji", "Segoe UI Emoji";
+  color: var(--ink);
+  background: linear-gradient(180deg, var(--bg), #0f1520);
+  line-height: 1.6;
+}
+.wrapper {
+  min-height: 100svh;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+}
+.container {
+  width: min(100% - 2rem, 960px);
+  margin-inline: auto;
+}
+
+header {
+  background: var(--panel);
+  border-bottom: 1px solid var(--border);
+  position: sticky;
+  top: 0;
+  z-index: 5;
+}
+.site-title {
+  margin: 0;
+  padding: 1rem 0 0.5rem;
+  font-size: 1.1rem;
+  color: var(--muted);
+}
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 0.75rem;
+  padding: 0.5rem 0 1rem;
+}
+nav a {
+  text-decoration: none;
+  color: var(--ink);
+  background: #0e1623;
+  border: 1px solid var(--border);
+  padding: 0.45rem 0.7rem;
+  border-radius: 0.6rem;
+}
+nav a:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+main {
+  padding: 2rem 0;
+}
+h1,
+h2,
+h3 {
+  line-height: 1.25;
+}
+h1 {
+  font-size: clamp(1.5rem, 1.2rem + 2vw, 2.2rem);
+  margin: 0 0 1rem;
+}
+h2 {
+  margin-top: 0.5rem;
+  border-bottom: 1px dashed var(--border);
+  padding-bottom: 0.25rem;
+}
+section {
+  margin: 1.25rem 0;
+  padding: 1rem;
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid var(--border);
+  border-radius: 0.9rem;
+}
+.demo-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+}
+.demo-box {
+  background: #0e1623;
+  border: 1px solid var(--border);
+  padding: 0.75rem;
+  border-radius: 0.8rem;
+}
+.badge {
+  display: inline-block;
+  font-size: 0.75rem;
+  padding: 0.15rem 0.5rem;
+  border-radius: 0.5rem;
+  border: 1px solid var(--border);
+  background: #0e1623;
+  color: var(--muted);
+}
+
+/* Helpers */
+.card {
+  background: #0e1623;
+  border: 1px solid var(--border);
+  border-radius: 0.8rem;
+  padding: 1rem;
+}
+.inline-demo span {
+  background: #122035;
+  border: 1px dashed #28415f;
+  padding: 0.25rem 0.4rem;
+  border-radius: 0.35rem;
+}
+.block-demo div {
+  background: #122035;
+  border: 1px dashed #28415f;
+  padding: 0.4rem;
+  border-radius: 0.35rem;
+  margin: 0.35rem 0;
+}
+.columns {
+  columns: 2;
+  gap: 2rem;
+}
+.kbd {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono",
+    monospace;
+  background: var(--code);
+  border: 1px solid var(--border);
+  border-radius: 0.4rem;
+  padding: 0.1rem 0.3rem;
+}
+footer {
+  color: var(--muted);
+  border-top: 1px solid var(--border);
+  background: #0e1623;
+  padding: 1rem 0;
+}
+small {
+  color: var(--muted);
+}
+a {
+  color: #9bd1ff;
+}
+a:hover {
+  color: var(--accent-2);
+}
+
+/* Float/Clear demo */
+.float-box {
+  width: 160px;
+  margin: 0.5rem;
+  background: #15263b;
+  border: 1px solid var(--border);
+  padding: 0.5rem;
+  border-radius: 0.6rem;
+}
+.float-left {
+  float: left;
+}
+.float-right {
+  float: right;
+}
+.clear-both {
+  clear: both;
+}
+
+/* Overflow demo */
+.ov-container {
+  width: 280px;
+  height: 120px;
+  border: 1px solid var(--border);
+  background: #0e1623;
+  padding: 0.5rem;
+  border-radius: 0.6rem;
+}
+.ov-visible {
+  overflow: visible;
+}
+.ov-hidden {
+  overflow: hidden;
+}
+.ov-scroll {
+  overflow: scroll;
+}
+.ov-auto {
+  overflow: auto;
+}
+
+/* Box-sizing demo */
+.bs-wrap {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+.bs {
+  width: 220px;
+  padding: 20px;
+  border: 10px solid #28415f;
+  background: #122035;
+  border-radius: 0.6rem;
+}
+.bs.content-box {
+  box-sizing: content-box;
+}
+.bs.border-box {
+  box-sizing: border-box;
+}
+.bs p {
+  margin: 0;
+}
+
+/* Display demo */
+.display-row {
+  border: 1px dashed var(--border);
+  padding: 0.5rem;
+  background: #0f1a2a;
+  border-radius: 0.6rem;
+}
+.display-row .item {
+  border: 1px solid #28415f;
+  background: #15263b;
+  padding: 0.4rem 0.6rem;
+  border-radius: 0.5rem;
+  margin: 0.25rem;
+}
+.display-block .item {
+  display: block;
+}
+.display-inline .item {
+  display: inline;
+}
+.display-inline-block .item {
+  display: inline-block;
+}
+.display-flex {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+/* Positioning demo */
+.pos-stage {
+  position: relative;
+  min-height: 180px;
+  border: 1px dashed var(--border);
+  padding: 1rem;
+  border-radius: 0.6rem;
+  background: #0f1a2a;
+}
+.pos-static {
+  position: static;
+}
+.pos-relative {
+  position: relative;
+  top: 10px;
+  left: 10px;
+}
+.pos-absolute-parent {
+  position: relative;
+  min-height: 120px;
+}
+.pos-absolute-child {
+  position: absolute;
+  top: 0.75rem;
+  right: 0.75rem;
+  border: 1px solid #28415f;
+  background: #15263b;
+  padding: 0.4rem 0.6rem;
+  border-radius: 0.5rem;
+}
+.pos-fixed {
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  background: #15263b;
+  border: 1px solid var(--border);
+  padding: 0.6rem 0.8rem;
+  border-radius: 0.8rem;
+}
+.sticky-wrap {
+  max-height: 240px;
+  overflow: auto;
+  border: 1px solid var(--border);
+  border-radius: 0.6rem;
+  background: #0f1a2a;
+  padding: 1rem;
+}
+.pos-sticky {
+  position: sticky;
+  top: 0.5rem;
+  border: 1px solid #28415f;
+  background: #15263b;
+  padding: 0.4rem 0.6rem;
+  border-radius: 0.5rem;
+}
+
+/* Utility for clearfix (traditional technique) */
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}

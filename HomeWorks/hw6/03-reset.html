@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="uk">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>3. reset.css — спостереження</title>
+  <link rel="shortcut icon" href="static/img/favicon.ico">
+  <link rel="stylesheet" href="static/css/reset.css">
+  <link rel="stylesheet" href="static/css/styles.css">
+</head>
+
+<body>
+  <div class="wrapper">
+    <header>
+      <div class="container">
+        <p class="site-title">ДЗ 7.1. Експерименти з блоковою моделлю</p>
+        <nav>
+          <a href="index.html">Головна</a>
+          <a href="02-block-inline.html">2. Block vs Inline</a>
+          <a href="03-normalize.html">3. normalize.css</a>
+          <a href="03-reset.html">3. reset.css</a>
+          <a href="04-display-boxsizing.html">4. display & box-sizing</a>
+          <a href="05-float-clear.html">5. float & clear</a>
+          <a href="06-overflow.html">6. overflow</a>
+          <a href="07-positioning.html">7. position</a>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <div class="container">
+        <h1>3. reset.css — спостереження</h1>
+        <section class="demo-box">
+          <h2>Демо-контент</h2>
+          <div class="demo-grid">
+            <div class="demo-box">
+              <h3>Заголовок H3</h3>
+              <p>Абзац з <strong>жирним</strong> та <em>курсивом</em>. Є також <code>код</code> і <kbd class="kbd">Ctrl</kbd>.</p>
+              <ul>
+                <li>Елемент списку</li>
+                <li>Ще один елемент</li>
+              </ul>
+              <table>
+                <tr>
+                  <th>TH</th>
+                  <th>TH</th>
+                </tr>
+                <tr>
+                  <td>TD</td>
+                  <td>TD</td>
+                </tr>
+              </table>
+            </div>
+            <div class="demo-box">
+              <form>
+                <label>Ввід: <input type="text" placeholder="Текст…"></label><br><br>
+                <label>Вибір: <select>
+                    <option>Один</option>
+                    <option>Два</option>
+                  </select>
+                </label><br><br>
+                <button type="button">Кнопка</button>
+              </form>
+            </div>
+          </div>
+        </section>
+        <section class="demo-box">
+          <h2>Опис експерименту</h2>
+          <p><strong>Мої спостереження:</strong> Після підключення <code>reset.css</code> усі базові відступи та стилі майже повністю прибрані. Заголовки, списки й таблиці втрачають типові браузерні відступи/маркери, тож сторінка виглядає «плоскою». Це зручно, коли хочеться повністю контролювати вигляд елементів власними стилями.</p>
+        </section>
+      </div>
+    </main>
+    <footer>
+      <div class="container"><small>© 2025 Всі права захищені. Дизайн та розробка — <a href="https://grynevych89.com.ua/" target="_blank">Grynevych Mykola</a></small>
+      </div>
+    </footer>
+  </div>
+</body>
+
+</html>

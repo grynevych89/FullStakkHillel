@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="uk">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>6. overflow</title>
+  <link rel="shortcut icon" href="static/img/favicon.ico">
+  <link rel="stylesheet" href="static/css/styles.css">
+</head>
+
+<body>
+  <div class="wrapper">
+    <header>
+      <div class="container">
+        <p class="site-title">ДЗ 7.1. Експерименти з блоковою моделлю</p>
+        <nav>
+          <a href="index.html">Головна</a>
+          <a href="02-block-inline.html">2. Block vs Inline</a>
+          <a href="03-normalize.html">3. normalize.css</a>
+          <a href="03-reset.html">3. reset.css</a>
+          <a href="04-display-boxsizing.html">4. display & box-sizing</a>
+          <a href="05-float-clear.html">5. float & clear</a>
+          <a href="06-overflow.html">6. overflow</a>
+          <a href="07-positioning.html">7. position</a>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <div class="container">
+        <h1>6. Експерименти з <code>overflow</code></h1>
+        <div class="demo-grid">
+          <section class="demo-box">
+            <h2>overflow: visible (за замовчуванням)</h2>
+            <div class="ov-container ov-visible">
+              <p><strong>Вміст:</strong> довгий текст, який виходить за нижню межу контейнера. Видно, як блок «випливає» назовні без обрізання.</p>
+              <p>Ще абзац, ще абзац, ще абзац...</p>
+            </div>
+          </section>
+          <section class="demo-box">
+            <h2>overflow: hidden</h2>
+            <div class="ov-container ov-hidden">
+              <p><strong>Вміст:</strong> довгий текст буде обрізано рамками контейнера.</p>
+              <p>Ще абзац, ще абзац, ще абзац...</p>
+            </div>
+          </section>
+          <section class="demo-box">
+            <h2>overflow: scroll</h2>
+            <div class="ov-container ov-scroll">
+              <p><strong>Вміст:</strong> завжди з'являються смуги прокрутки.</p>
+              <p>Ще абзац, ще абзац, ще абзац...</p>
+            </div>
+          </section>
+          <section class="demo-box">
+            <h2>overflow: auto</h2>
+            <div class="ov-container ov-auto">
+              <p><strong>Вміст:</strong> смуги з'являються лише якщо потрібно.</p>
+              <p>Ще абзац, ще абзац, ще абзац...</p>
+            </div>
+          </section>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="container"><small>© 2025 Всі права захищені. Дизайн та розробка — <a href="https://grynevych89.com.ua/" target="_blank">Grynevych Mykola</a></small>
+      </div>
+    </footer>
+  </div>
+</body>
+
+</html>
